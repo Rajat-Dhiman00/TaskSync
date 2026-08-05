@@ -4,7 +4,7 @@ import {
   LayoutDashboard, ListChecks, Calendar, BarChart3, Sparkles, Settings,
   Search, Command as CmdIcon, LogOut, Plus, Cpu, Clock, Timer, Palette,
   Bell, PanelRightClose, PanelRightOpen, Play, Pause, RotateCcw, AlertTriangle,
-  CheckCircle2, Flame, Pin, ChevronRight, X, Home
+  CheckCircle2, Flame, Pin, ChevronRight, X, Home, Menu
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -49,6 +49,7 @@ export default function AppShell() {
   const [results, setResults] = useState([]);
   const [theme, setTheme] = useState(() => localStorage.getItem("tasksync_theme") || "hr-warm");
   const [rightPanelOpen, setRightPanelOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Task Stats for Sidebar & Right Panel
   const [tasks, setTasks] = useState([]);
@@ -222,8 +223,21 @@ export default function AppShell() {
       {/* Glow Gradient Background */}
       <div className="absolute inset-0 mesh-hero opacity-40 pointer-events-none" />
       
+        {/* Mobile Backdrop */}
+      {mobileMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black/80 backdrop-blur-sm z-40 lg:hidden"
+          onClick={() => setMobileMenuOpen(false)}
+        />
+      )}
+
       {/* ===== SIDEBAR ===== */}
-      <aside className="relative z-10 w-64 theme-sidebar theme-border border-r p-4 flex flex-col shrink-0 select-none" data-testid="sidebar">
+      <aside
+        className={`fixed lg:static inset-y-0 left-0 z-50 w-64 theme-sidebar theme-border border-r p-4 flex flex-col shrink-0 select-none transition-transform duration-300 transform ${
+          mobileMenuOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
+        }`}
+        data-testid="sidebar"
+      >
         {/* Brand */}
         <div className="flex items-center gap-2.5 px-2 py-2 border-b border-white/5 pb-4">
           <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 grid place-items-center shadow-lg shadow-indigo-500/20">
@@ -250,6 +264,7 @@ export default function AppShell() {
           {links.map((l) => (
             <NavLink
               key={l.to} to={l.to} end={l.end}
+              onClick={() => setMobileMenuOpen(false)}
               data-testid={`nav-${l.label.toLowerCase().replace(/\s+/g, "-")}`}
               className={({ isActive }) =>
                 `flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs transition-all duration-200 ${
@@ -320,14 +335,21 @@ export default function AppShell() {
         <header className="h-14 border-b theme-border px-6 flex items-center justify-between backdrop-blur-xl theme-card sticky top-0 z-30 font-mono text-xs">
           
           {/* Welcome Message & Navigation */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => setMobileMenuOpen((open) => !open)}
+              className="lg:hidden p-2 rounded-xl border theme-border bg-white/[0.04] theme-text hover:bg-white/[0.08] transition-all"
+              title="Toggle Mobile Menu"
+            >
+              {mobileMenuOpen ? <X className="w-4 h-4 text-indigo-400" /> : <Menu className="w-4 h-4 text-indigo-400" />}
+            </button>
             <button
               onClick={() => nav("/")}
               className="flex items-center gap-2 px-3 py-1.5 rounded-xl border theme-border bg-white/[0.04] theme-text hover:bg-white/[0.08] hover:border-indigo-500/50 transition-all shadow-sm"
               title="Return to Website Home"
             >
               <Home className="w-4 h-4 text-indigo-400" />
-              <span>Home</span>
+              <span className="hidden sm:inline">Home</span>
             </button>
             <div className="w-px h-5 bg-white/10 hidden md:block" />
             <ClickSpark
