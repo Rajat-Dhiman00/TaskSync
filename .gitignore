@@ -1,0 +1,39 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Build Output
+dist/
+dist-ssr/
+*.local
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Editor & OS files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Scratch & Temporary
+replace.cjs
+replace.js
+do_restructure.cjs
+*.msi
+*.exe
+archive/
