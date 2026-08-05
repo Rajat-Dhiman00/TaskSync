@@ -233,8 +233,8 @@ export default function AppShell() {
 
       {/* ===== SIDEBAR ===== */}
       <aside
-        className={`fixed lg:static inset-y-0 left-0 z-50 w-64 theme-sidebar theme-border border-r p-4 flex flex-col shrink-0 select-none transition-transform duration-300 transform ${
-          mobileMenuOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
+        className={`fixed lg:static inset-y-0 left-0 z-50 w-64 theme-sidebar theme-border border-r p-4 flex-col shrink-0 select-none transition-all duration-300 ${
+          mobileMenuOpen ? "flex translate-x-0 bg-[#13151f] shadow-2xl" : "hidden lg:flex"
         }`}
         data-testid="sidebar"
       >
@@ -330,7 +330,7 @@ export default function AppShell() {
       </aside>
 
       {/* ===== MAIN CONTENT AREA ===== */}
-      <div className="relative z-10 flex-1 flex flex-col min-w-0">
+      <div className="relative z-10 flex-1 flex flex-col min-w-0 w-full overflow-x-hidden">
         {/* Topbar */}
         <header className="h-14 border-b theme-border px-6 flex items-center justify-between backdrop-blur-xl theme-card sticky top-0 z-30 font-mono text-xs">
           

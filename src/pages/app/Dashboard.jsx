@@ -62,13 +62,13 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="space-y-6 font-sans select-none pb-12 animate-in fade-in duration-500">
+    <div className="space-y-6 font-sans select-none pb-12 animate-in fade-in duration-500 p-4 sm:p-6 md:p-8 max-w-full overflow-x-hidden">
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-2">
         <div>
           <div className="flex items-center gap-3 -mb-2">
             <LayoutDashboard className="w-8 h-8 text-indigo-500 mb-4" /> 
-            <div className="w-[320px]">
+            <div className="w-full max-w-[320px]">
               <StrokeText
                 text="Overview"
                 strokeColor="#6366f1"
