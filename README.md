@@ -10,7 +10,7 @@
 
 **TaskSync** is an engineer-first productivity workspace featuring interactive Data Structures & Algorithms (DSA) visualizers, natural language task parsing, calendar scheduling, real-time analytics, and GPU-accelerated glassmorphic UI shaders.
 
-[🚀 **Explore Live Demo**](https://tasksync-app.surge.sh) • [📖 **View Architecture**](#-project-architecture) • [🛠️ **Local Setup**](#%EF%B8%8F-getting-started)
+[🚀 **Explore Live Demo**](https://tasksync-20na.onrender.com) • [📖 **View Architecture**](#-project-architecture) • [🛠️ **Local Setup**](#%EF%B8%8F-getting-started)
 
 </div>
 
