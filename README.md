@@ -2,7 +2,7 @@
 
 # ⚡ TaskSync — AI-Powered Engineer Productivity Suite & DSA Lab
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-https%3A%2F%2Ftasksync--app.surge.sh-6366f1?style=for-the-badge&logo=surge&logoColor=white)](https://tasksync-app.surge.sh)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-https%3A%2F%2Ftasksync--20na.onrender.com-6366f1?style=for-the-badge&logo=render&logoColor=white)](https://tasksync-20na.onrender.com)
 [![React](https://img.shields.io/badge/React-19.0.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-6.4.3-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4.17-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
@@ -10,7 +10,7 @@
 
 **TaskSync** is an engineer-first productivity workspace featuring interactive Data Structures & Algorithms (DSA) visualizers, natural language task parsing, calendar scheduling, real-time analytics, and GPU-accelerated glassmorphic UI shaders.
 
-[🚀 **Explore Live Demo**](https://tasksync-app.surge.sh) • [📖 **View Architecture**](#-project-architecture) • [🛠️ **Local Setup**](#%EF%B8%8F-getting-started)
+[🚀 **Explore Live Demo**](https://tasksync-20na.onrender.com) • [📖 **View Architecture**](#-project-architecture) • [🛠️ **Local Setup**](#%EF%B8%8F-getting-started)
 
 </div>
 
@@ -116,14 +116,14 @@ TaskSync/
 | **GPU Shaders** | [OGL](https://github.com/oframe/ogl) + [Three.js](https://threejs.org/) |
 | **Charts** | [Recharts](https://recharts.org/) |
 | **Icons** | [Lucide React](https://lucide.dev/) |
-| **Deployment** | [Surge.sh](https://surge.sh/) (Live CDN) |
+| **Deployment** | [Render](https://render.com/) (Live Cloud Hosting) |
 
 ---
 
 ## 🌐 Live Deployment
 
-The production application is live and hosted on Surge CDN:
-👉 **[https://tasksync-app.surge.sh](https://tasksync-app.surge.sh)**
+The production application is live and hosted on Render:
+👉 **[https://tasksync-20na.onrender.com](https://tasksync-20na.onrender.com)**
 
 ---
 
