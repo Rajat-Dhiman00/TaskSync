@@ -2,7 +2,7 @@
 
 # ⚡ TaskSync — AI-Powered Engineer Productivity Suite & DSA Lab
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-https%3A%2F%2Ftasksync--app.surge.sh-6366f1?style=for-the-badge&logo=surge&logoColor=white)][(https://tasksync-app.surge.sh](https://tasksync-20na.onrender.com))
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-https%3A%2F%2Ftasksync--app.surge.sh-6366f1?style=for-the-badge&logo=surge&logoColor=white)][https://tasksync-20na.onrender.com]
 [![React](https://img.shields.io/badge/React-19.0.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-6.4.3-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4.17-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
